@@ -172,12 +172,14 @@ int main(int argc, const char**argv) {
 	cout << lib.toString() << endl;
 
 	lib.analyzeDir("/usr/lib");
-	//Checking /usr/lib/x86_64-linux-gnu/xtables/libxt_NFQUEUE.so
-	//Segmentation fault (core dumped)
+	//Checking /usr/lib/x86_64-linux-gnu/libirs-9.18.1-1ubuntu1.2-Ubuntu.so
+	//tls.c:83: fatal error: RUNTIME_CHECK(OPENSSL_init_ssl((0x00000200L | 0x00000400L | 0x00001000L | 0x00002000L | 0x00004000L) | 0x00000040L, ((void *)0)) == 1) failed
+	//Aborted (core dumped)
+
 
 	//lib.analyzeFile("/usr/lib/x86_64-linux-gnu/xtables/libxt_NFQUEUE.so");
-	//Checking /usr/lib/x86_64-linux-gnu/xtables/libxt_NFQUEUE.so
- 	//Segmentation fault (core dumped)
+	//Checking library: /usr/lib/x86_64-linux-gnu/xtables/libxt_NFQUEUE.so
+	//Segmentation fault (core dumped)
 
 	return 0;
 }
