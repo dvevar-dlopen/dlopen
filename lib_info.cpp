@@ -61,6 +61,7 @@ namespace libinfo {
 		errorDescription = dlerror();
 		if (errorDescription != NULL)  {
 			LOG("\tdlsym error: %s\n", errorDescription);
+			dlclose(handle);
 			return false;
 		}
 
