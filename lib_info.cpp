@@ -46,7 +46,7 @@ namespace libinfo {
 	bool LibInfo::libraryContainsSymbol(string libraryPath, string symbolName) {
 		char *errorDescription = NULL;
 
-		void *handle = dlopen((char*)libraryPath.c_str(), RTLD_LAZY); //Sometimes causes Segmentation fault!?!
+		void *handle = dlopen(libraryPath.c_str(), RTLD_LAZY); //Sometimes causes Segmentation fault!?!
 		if (!handle) {
 			LOG("\tdlopen failure: handle == NULL: %s | %s\n", libraryPath.c_str(), symbolName.c_str());
 			return false;
