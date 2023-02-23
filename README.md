@@ -1,7 +1,7 @@
 # dlopen (dlfcn.h) trouble
 ## fatal error: RUNTIME_CHECK or Segmentation fault
 
-I want to know if a certain Linux library (e.g. shared object, .so) contains a symbol (specifically, a function) with a specified name.
+I want to know if a certain Linux library (i.e. shared object, .so) contains a symbol (specifically, a function) with a specified name.
 
 In order to do that the library must first be opened by <b><u>dlopen</u></b>:
 
